@@ -1,28 +1,14 @@
 import React, { Component } from 'react'
+import User from './User';
 
- class life extends Component {
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-             name: "ASH"
-        }
-        console.log(`im coming from constructor`)
-    }
-    static getDerivedStateFromProps(nextProps, prevState) {
-        console.log(`im coming from getDerivedStateFromProps`);
-        return null;
-    }
-    componentDidMount(){
-       console.log(`im coming from ComponentDidMount`)
-    }
+ class Life extends Component {
     render() {
-        console.log(`im coming form render`)
         return (
             <div>
-                <h1> Welcome to the react</h1>
+                <h1> welcome to the react</h1>
+                <User active = "5" subtitle ="active users"/>
             </div>
         )
     }
 }
-export default life;
+export default Life;

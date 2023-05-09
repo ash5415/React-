@@ -1,3 +1,24 @@
+                                         React course 
+                                        ===============
+ ---> React is a javascript library for building use interfaces.
+ ---> React is used to build single page applications.
+ ---> React allows us to create reusable UI Components.
+ ---> React creates virtual Dom in memory.
+ ---> instead of manipulating the  browser DOM directly, react creates a virtual DOM IN memory. 
+
+Folder structure:
+=================
+       ---> /node_modules : all your npm (node package manager) libraries and dependences will be there.
+       ---> /src : we write all the code.
+       ---> /public : contains the resources and that are supposed to be transfer to the client.
+                   eg: index.html
+       ---> package.json : metadata of the application.
+       ---> package-lock.json: track the version of the each and every library in the project.
+       ---> .gitignore : ignores the files and folders mentioned here from the git version of tracking.
+       ---> contains information about the mark-down format.
+
+ react app create command : npx create-react-app <name of the app>
+
 Components in react:
                ---> components are classified in to 2 types
                          1. Class based components
