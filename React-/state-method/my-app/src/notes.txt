@@ -1,0 +1,8 @@
+                                    set method 
+
+    ===> react components has a build in  state object.
+    ===> the state object where you store the values that belong to the component.
+    ===> when the state object changes, the component re-renders.
+    ===> the state object initialize the constructor.
+    ===> the state method requires in constructor and super.
+    
