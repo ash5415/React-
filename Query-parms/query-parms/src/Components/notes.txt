@@ -1,0 +1,12 @@
+                    Query params
+                ====================
+
+===> Query parameters are a defind set of parameters attach to the end of the URL.
+
+===> more simply , they are key =value pairs we can attach to the uRL, used as one of the many ways 
+    
+     to pass the data to the application.
+
+===> some pre-requisites we need to install 
+    
+      command : npm i react-router-dom .
