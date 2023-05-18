@@ -1,0 +1,76 @@
+                                 Redux
+                          ==================
+
+===> State transfer between components is pretty messy in react. since it is hard to keep track of 
+     
+     which component data is coming from.
+
+===> it is really complicated if users working with a large number of state applications.
+
+===> redux solve the state transfer problem by storing all of the states in a single place called store.
+
+====> managing and transferring sates become easier as all the states are store in the same convenient store.
+ 
+     every component in the application can directly access the required state from the store.
+
+===> redux is a state management tool.
+
+===> redux can be used with any javascript framework or library.
+
+===> redux store the sate of the application, and the components can access the state from a state store.
+
+  Redux concepts :
+==================
+
+   Store : 
+        
+        ===> store is an object the holds the applications tree. there should be only be a single 
+
+            store in a redux app.
+
+        ===> getState() returns the current state of the store.
+                  
+                   syntax:    console.log(store.getState());
+
+        ===> dispatch() dispatch the action. it is only the way to update the application state.
+               syntax:  ButtonChange: () => dispatch({msg:"message_change"});
+
+        ===> subscribe() subscribe a change listener to the state.
+
+        ===> unSubscribe() is useful when you no longer want to call your listener method when the 
+
+              state changes.
+
+              syntax : const unSubscribe= store.subscribe(handleChange) unSubscribe()
+
+    Action :
+
+        ===> Action is  a plain object that represents an intention to change the sate.
+
+        ===> they must have a property to indicate the type of action to be  carried out.
+
+        ===> Action are payloads of information  that send your data from your application to your store.
+
+        ===> Any data, whether from UI events or network callbacks, needs to be eventually be dispatch
+
+              as actions.
+
+        ===> Action must have a type of filed, that indicates what type of action being performed.
+
+Reducers :
+
+        ===> Reducers are pure functions, that specifies how the application's state changes in 
+            
+             response to actions sent to the store.
+
+        ===> actions only describe what happened, not how the application state changes.
+
+        ===> A Reducer is a function that accepts the current state and action, and returns a new 
+
+            state with the action performed.
+
+        ===> combineReducers() utility can be used to combine all the reducers in the app in to a 
+
+             single index Reducer which makes maintainability much easier.
+
+        
