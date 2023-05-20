@@ -10,7 +10,8 @@ import axios from 'axios';
     }
   }
   componentDidMount(){
-        axios.get(`https://jsonplaceholder.typicode.com/todos`).then(resp =>{
+        axios.get(`https://jsonplaceholder.typicode.com/todos`)
+        .then(resp =>{
              this.setState(
               {
                 listOfTodos:resp.data
@@ -31,6 +32,20 @@ import axios from 'axios';
       }).catch(error =>{
         console.log(error);
       });
+      // fetch(
+      //   `http://localhost:6070/comments`,
+      //   {
+      //     method :'GET'
+      //   }
+      // )
+      // .then(resp=> resp.json());
+      // .then(resp=>{
+      //   this.setState(
+      //     {
+      //        listOfComments:resp
+      //     }
+      //   )
+      // })
   }
   render() {
     const{listOfTodos,listOfComments}=this.state;
