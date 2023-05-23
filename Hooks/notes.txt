@@ -1,0 +1,56 @@
+                                        Hooks
+                                    ============
+
+functional components in react hooks :
+ 
+    1. functional components with hooks are simpler, as there is no need to define constructor, this 
+
+       keyword, lifecycle methods, destructing the same values at multiple times.
+
+    2. Hooks does'nt split the components as per lifecycle methods, rather they split a component into smaller
+
+       functions based on related pieces.
+
+    3. the organize logic inside a component into reusable isolated units.
+
+    4. they are easier to refactor and test, allows writers to write clear and concise the code.
+
+    5. they mainly deal with state, effects and context in a react application.
+
+    6. hooks we are add to react in 16.8 
+
+Basic Hooks:
+
+  ===> the basic hooks are used to implement the features of stateful components in functional components are :
+
+           1. useState Hook
+
+           2. useEffect hook
+
+           3. useContext hook
+
+useState Hook :
+
+    ==> useState hook is used to manage local states of a functional component.
+
+    ==> the useState hook accepts an initial state as an argument and return 2 variables.
+
+    ==> the first variable is the actual state and second variable is a function to update the state value.
+
+    syntax:
+
+       import{useState} from 'react';
+
+                           ----------> setter function
+                           '
+         const[count, setCount]= useState(initialState);
+                  '
+                  '
+                  '
+   newState<------                              '
+                                                '
+                                                '----> initialState
+           const initialState = 0; 
+ 
+the useState hook replace the this.state() and this.setState() method used in class based component.
+
