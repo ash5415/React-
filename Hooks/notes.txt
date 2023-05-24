@@ -54,3 +54,14 @@ useState Hook :
  
 the useState hook replace the this.state() and this.setState() method used in class based component.
 
+useEffect:
+
+      ===> useEffect hook is used to manages the state and side effects such as interactions with the browser and 
+            
+        or DOM API and external API like data fetching,timers,subscriptions, request and more.
+
+    ===> the useEffect hook is replace the componentDidMount, componentDidUpdate and componentWillUnmount methods.
+
+    ===> componentDidMount cna be implemented by using an effect hook with an empty array passed as the second 
+      
+         argument.

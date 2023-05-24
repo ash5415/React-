@@ -1,4 +1,5 @@
 import{useState} from'react';
+import Fetch from './Components/Fetch';
 
 const App =()=>{
      
@@ -32,7 +33,7 @@ const App =()=>{
         <div>
           <center>
             <header>
-                 welcome to the react
+                 Welcome To The React
             </header>
 
             <h1> the count value :{count}</h1>
@@ -57,6 +58,7 @@ const App =()=>{
                     )
                 })
              }
+             <Fetch/>
         </div>
         
         
