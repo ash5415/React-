@@ -1,7 +1,9 @@
 /* eslint-disable no-undef */
 import{useState} from'react';
-import Fetch from '../src/components/Data';
-import ComponentX from'../src/components/ComponentX'
+import Fetch from './components/Data';
+import ComponentX from'.components/ComponentX'
+import Title1 from './components/Title1';
+import Title2 from './components/Title2';
   
  
  export const TopLevelContext  = React.createContext();
@@ -66,6 +68,8 @@ const App =()=>{
              <TopLevelContext.Provider value={"i'm from top level component"}>
                   <ComponentX/>
              </TopLevelContext.Provider>
+             <Title1/>
+             <Title2/>
              
         </div>
         

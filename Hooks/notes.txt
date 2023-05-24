@@ -89,3 +89,14 @@ useContext Hook :
         ===> the useContext hook is used to deal with context in react,it accept a context value and return the 
 
              context value.  
+
+custom Hook:
+
+     ===> A custom hook is a javascript function whose name is starts with "use"
+
+     ===> A custom hook is call other hooks as per requirement.
+
+     ===> you can even take advantage of built-in hooks and build your own hook.
+
+     ===> there are mainly used to share logic between two or higher components.
+     
