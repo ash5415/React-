@@ -1,6 +1,10 @@
+/* eslint-disable no-undef */
 import{useState} from'react';
-import Fetch from './Components/Fetch';
-
+import Fetch from '../src/components/Data';
+import ComponentX from'../src/components/ComponentX'
+  
+ 
+ export const TopLevelContext  = React.createContext();
 const App =()=>{
      
     const initialValue =0
@@ -59,6 +63,10 @@ const App =()=>{
                 })
              }
              <Fetch/>
+             <TopLevelContext.Provider value={"i'm from top level component"}>
+                  <ComponentX/>
+             </TopLevelContext.Provider>
+             
         </div>
         
         

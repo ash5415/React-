@@ -65,3 +65,27 @@ useEffect:
     ===> componentDidMount cna be implemented by using an effect hook with an empty array passed as the second 
       
          argument.
+
+useContext Hook :
+
+        ===> react application can have multiple nested components.
+
+        ===> in case if the passing the props, you can pass props only from parent component to child component
+
+        ===> props from an app component can directly passed to any other component.
+
+        ===> when the application groves bigger it's a very hard task to maintain the data to avoid 
+
+             such kind of complex issues react introduced a hook called useContext hook.
+
+        ===> context provides a way to pass dat through the component tree without having to pass down manually
+
+             at multiple levels.
+
+        ===> react contexts consists of a provider and consumer, provider is defined to pass the context value
+
+             and consumer defined to accept the context value.
+
+        ===> the useContext hook is used to deal with context in react,it accept a context value and return the 
+
+             context value.  
