@@ -19,7 +19,7 @@ const onSubmit = ()=>{
     <div>
         <form>
             <Label labelName='fullName'/>
-            <Input type ='text' name ='fullName'/>
+            <Input type ='text' name='fullName'/>
             <Label labelName='Email'/>
             <Input type="text" name ='email'/>
             <Button onClick={onSubmit} buttonLabel={submit}/>

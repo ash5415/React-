@@ -1,7 +1,7 @@
 const Input = ({type,fullName})=>{
     return(
         <div>
-            <input type={type} name ={fullName} />
+            <input type={type} name={fullName} />
         </div>
     )
 }
